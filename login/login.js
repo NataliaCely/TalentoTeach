@@ -10,7 +10,7 @@ if(user == "" || clave == ""){
 }
 
 
-    else if(user=="Carlos" && clave=="1234"){
+    else if(user=="Admin" && clave=="1234" || user=="Docente" && clave=="1234" || user=="Estudiante" && clave=="1234"){
             window.location="../index.html";
     }
         else{
