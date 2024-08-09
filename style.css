@@ -6,19 +6,45 @@ body {
     margin: 0;
     height: 100vh;
     }
-.form1{
+
+  
+.contenedor_login{
     background-color: rgb(255, 255, 255);
     opacity: 1;
-    width: 400px;
-    height: 500px;
-    border: solid gray 2px;
+    width: 800px;
+    height: 500px;    
     border-radius: 20px;    
     margin: auto;
     margin-top: 100px;
-    padding: 10px;
+   
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
     }
+
+  
+    .formulario{
+      margin-top: 50px;
+      width: 400px;
+      float: left;  
+       
+    }
+
+    .bienvenida{
+      width: 400px;  
+      height: 100%;  
+      float: left;
+      text-align: center;
+      align-items: center;
+      background-color: #012957;
+      color: white;
+      border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;; 
+
+    }
+    .texto{
+      margin-top: 50%;
+      font-size: 18px;
+    }
+
     .usuario, .pw{
         width: 95%;
         border: outset 2px;
@@ -33,23 +59,23 @@ body {
      .contenedor{
         /* border:  solid red 1px; */
         position: relative;
-        padding: 10px 20px;
+        padding: 0px 20px;
     }
     .boton {
         display: block;
-        margin-left: auto;
-        padding: 15px 30px;
+        margin: auto;
+        padding: 15px 40px;
         border: none;
-        background-color: purple;
+        background-color: rgb(3, 48, 131);
         color: white;
         border-radius: 6px;
         cursor: pointer;
-        font-size: 16px;
-        margin-top: 30px;
+        font-size: 20px;   
+            
       }
 
       .boton:hover {
-        background-color: #9867C5;
+        background-color: #0a6ef1;
         transform: translateY(-2px);
       }
       .bodyInicio{
@@ -81,18 +107,15 @@ body {
         display:flex;
         flex-direction: row;
         gap: 30px;
-
         
       }
       nav ul{
         list-style-type: none;
         align-items: center;
-
       }
 
       nav li{
         display: inline;
         margin-right: 20px;
-
       }
 

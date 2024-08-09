@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="login.js"></script>
 
 
 </head>
 <body>
-    <form action="" class="form1"><h1>Validación de Usuarios...</h1>
+    <div class="contenedor_login">
+        <div class="bienvenida">
+            <div class="texto">
+            <h1> Bienvenidos</h1>
+            <p> Mejor entorno de educacion para desarrollo de BootCamps</p>
+        </div>
+        </div>
+        <div class="formulario">
+            <form action="" class="form1"><center> <h1>Iniciar sesion</h1></center>
+                
+                <div class="contenedor">
+                    <label for="usuario">Usuario: <br> </label>
+                    <input class="usuario" type="text" placeholder="Digite su Usuario" id="user">
+                </div>
+                <div class="contenedor">
+                    <label for="usuario">Contraseña: <br> </label>
+                    <input class="pw" type="password" placeholder="Digite su Contraseña" id="pw">
+                </div>
+                <div class="contenedor">
+                    <input type="button" class="boton" value="Ingresar.." onclick="login()">
+                </div>        
+            </form>            
+        </div>
+
         
-        <div class="contenedor">
-            <label for="usuario">Usuario: <br> </label>
-            <input class="usuario" type="text" placeholder="Digite su Usuario" id="user">
-        </div>
-        <div class="contenedor">
-            <label for="usuario">Contraseña: <br> </label>
-            <input class="pw" type="password" placeholder="Digite su Contraseña" id="pw">
-        </div>
-        <div class="contenedor">
-            <input type="button" class="boton" value="Ingresar.." onclick="login()">
-        </div>
-        <div class=""></div>
-        <div class=""></div>
-    </form>
+    </div>
+
 </body>
 </html>

@@ -11,7 +11,7 @@ if(user == "" || clave == ""){
 
 
     else if(user=="Carlos" && clave=="1234"){
-            window.location="index.html";
+            window.location="../index.html";
     }
         else{
             alert("Datos Incorrecotos");
