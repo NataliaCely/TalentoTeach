@@ -171,5 +171,11 @@ body {
     }
     .contenido{
       border: #0a6ef1 solid 1px;
+      width: 33%;
+      height: auto;
+    }
+
+    .fa-bars{
+      size: 16px;
     }
 
