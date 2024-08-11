@@ -1,181 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 20px;
   font-style: normal;
-} 
+}
 
 /* Cambio de fuente pagina en general */
 
 body {
-    background: url("img/fondoindex.jpg"); 
-    opacity: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
-    }
+  background: url("img/fondoindex.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+}
 
-  
-.contenedor_login{
+.contenedor_login {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.formulario {
+  margin-top: 50px;
+  width: 400px;
+  float: left;
+}
+.form1{
+  margin-top: 45px;
+}
+.bienvenida {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  background-color: #012957;
+  color: white;
+  border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;
+}
+.texto-bienvenida {
+  margin-top: 8rem;
+}
+.texto {
+  margin-top: 50%;
+  font-size: 18px;
+}
+
+.usuario,
+.pw {
+  width: 95%;
+  border: outset 2px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 10px 10px 20px 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+.contenedor {
+  /* border:  solid red 1px; */
+  position: relative;
+  padding: 0px 20px;
+}
+.boton {
+  display: block;
+  margin: auto;
+  padding: 15px 40px;
+  border: none;
+  background-color: rgb(3, 48, 131);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.boton:hover {
+  background-color: #0a6ef1;
+  transform: translateY(-2px);
+}
+.bodyInicio {
+  background: url("img/fondogeneral.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+}
+.caja1Inicio {
+  background-color: azure;
+  width: 1200px;
+  height: auto;
+  border: outset purple 2px;
+  box-shadow: black 30px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 0px;
+  position: relative;
+  align-content: center;
+}
+.caja2Inicio {
+  border: solid blueviolet 2px;
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: cornflowerblue;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: rgb(70, 70, 225);
+}
+.banerinicio {
+  opacity: 0.7;
+  overflow: auto;
+}
+.baner {
+  overflow: auto;
+}
+.piepagina {
+  display: block;
+  border: 1px solid black;
+  width: 1200px;
+  height: 80px;
+  background-color: #012957;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1px 1px;
+  color: white;
+}
+.bi {
+  color: rgb(177, 211, 241);
+  margin-left: 50px;
+}
+p.redes {
+  color: rgb(177, 211, 241);
+}
+.contenido {
+  border: #0a6ef1 solid 1px;
+  width: 33%;
+  height: auto;
+}
+
+.fa-bars {
+  size: 16px;
+}
+@media  (min-width < 768px){
+  .contenedor_login {
     background-color: rgb(255, 255, 255);
     opacity: 1;
-    width: 800px;
-    height: 500px;    
-    border-radius: 20px;    
+    width: 470px;
+    height: 460px;
+    border-radius: 20px;
     margin: auto;
     margin-top: 100px;
     position: relative;
-    }
-
-  
-    .formulario{
-      margin-top: 50px;
-      width: 400px;
-      float: left;  
-       
-    }
-
-    .bienvenida{
-      width: 400px;  
-      height: 100%;  
-      float: left;
-      text-align: center;
-      align-items: center;
-      background-color: #012957;
-      color: white;
-      border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;; 
-
-    }
-    .texto{
-      margin-top: 50%;
-      font-size: 18px;
-    }
-
-    .usuario, .pw{
-        width: 95%;
-        border: outset 2px;
-        border-radius: 5px;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        padding: 10px 10px 20px 20px;
-        position: relative;
-        box-sizing: border-box;
-
-    }
-     .contenedor{
-        /* border:  solid red 1px; */
-        position: relative;
-        padding: 0px 20px;
-    }
-    .boton {
-        display: block;
-        margin: auto;
-        padding: 15px 40px;
-        border: none;
-        background-color: rgb(3, 48, 131);
-        color: white;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 20px;   
-            
-      }
-
-      .boton:hover {
-        background-color: #0a6ef1;
-        transform: translateY(-2px);
-      }
-      .bodyInicio{
-        background: url("img/fondogeneral.jpg"); 
-        opacity: 1;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0;
-        height: 100vh;
-      }
-      .caja1Inicio{
-        background-color: azure;
-        width: 1200px;
-        height: auto;
-        border: outset purple 2px;
-        box-shadow: black 30px;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 0px;
-        position: relative;
-        align-content: center;
-
-      }
-      .caja2Inicio{
-        border: solid blueviolet 2px;
-        width: 1200px;
-        height: 400px;
-        position: relative;
-        display:flex;
-        flex-direction: row;
-        gap: 30px;
-        
-      }
-      nav ul{
-        margin: 0;
-        padding: 0;
-        background-color: cornflowerblue;
-        list-style-type: none;
-        overflow: hidden;
-      }
-
-      nav li{
-        float: left;
-      }
-      a{
-
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 12px 30px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-
-    li a:hover{
-        background-color: rgb(70, 70, 225);
-    }
-    .banerinicio{
-      opacity: 0.7;
-      overflow: auto;
-    }
-    .baner{
-      overflow: auto;
-    }
-    .piepagina{
-      display: block;
-      border: 1px solid black;
-      width: 1200px;
-      height: 80px;
-      background-color: #012957;
-      margin: auto;
-      border-radius: 10px;
-      padding: 1px 1px;
-      color:white;
-
-    }
-    .bi{
-      color: rgb(177, 211, 241);
-      margin-left: 50px;
-     
-    
-    }
-    p.redes{
-      color: rgb(177, 211, 241);
-    }
-    .contenido{
-      border: #0a6ef1 solid 1px;
-      width: 33%;
-      height: auto;
-    }
-
-    .fa-bars{
-      size: 16px;
-    }
-
+}
+}

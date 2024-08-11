@@ -11,7 +11,7 @@ if(user == "" || clave == ""){
 
 
     else if(user=="Admin" && clave=="1234" || user=="Docente" && clave=="1234" || user=="Estudiante" && clave=="1234"){
-            window.location="../dashboard.html";
+            window.location="../dashboard/dashboard.html";
     }
         else{
             alert("Datos Incorrecotos");
