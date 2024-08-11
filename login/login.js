@@ -11,10 +11,10 @@ if(user == "" || clave == ""){
 
 
     else if(user=="Admin" && clave=="1234" || user=="Docente" && clave=="1234" || user=="Estudiante" && clave=="1234"){
-            window.location="../index.html";
+            window.location="../dashboard.html";
     }
         else{
             alert("Datos Incorrecotos");
-            window.location="login.html";
+            window.location="index.html";
         }
 }
