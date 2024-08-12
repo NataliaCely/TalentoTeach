@@ -201,7 +201,7 @@ a.sidebar-link:hover {
     }
 
     .footer{
-        padding: 20px;
+        padding: 10px;
         background-color: #0e2238;
         display: grid;
         grid-template-columns: repeat(3 1fr);
@@ -231,6 +231,10 @@ a.sidebar-link:hover {
     .texto{
         color:white;
         font-size: 1rem;
+    }
+    .titulo{
+        color:white;
+        font-size: 1.5rem;
     }
 
 
