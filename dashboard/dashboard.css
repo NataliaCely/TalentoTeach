@@ -51,6 +51,9 @@ body {
     width: 215px;
     min-width: 215px;
 }
+.pagination-nav{
+    background-color: transparent !important;
+  }
 nav{
     background-color: #0e2238;
 }
