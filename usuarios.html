@@ -11,15 +11,17 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../usuarios/usuarios.html " />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../dashboard/dashboard.css" />
   </head>
   <body>
+    <div class="baner"><img class="banerinicio" src="../img/baner.png" alt=""></div>
     <nav class="navbar navbar-light">
       <div class="container-fluid">
         <button class="toggle-btn btn-sm menu" type="button">
           <i class="lni lni-menu"></i>
         </button>
-        <a class="navbar-brand text-light">Carlos Perez</a>
+        <a class="navbar-brand text-light">Usuario Validado</a>
       </div>
     </nav>
     <div class="wrapper">
@@ -31,13 +33,25 @@
         </div>
         <ul class="sidebar-nav">
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="copiadashboard.html" class="sidebar-link">
+              <i class="lni lni-grid-alt"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="usuarios.html" class="sidebar-link">
+              <i class="lni lni-users"></i>
+              <span>Usuarios</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="formacion.html" class="sidebar-link">
               <i class="lni lni-library"></i>
               <span>Mi formación</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="califiaciones.html" class="sidebar-link">
               <i class="lni lni-agenda"></i>
               <span>Calificaciones</span>
             </a>
@@ -55,7 +69,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="foro.html" class="sidebar-link">
               <i class="lni lni-popup"></i>
               <span>Foro</span>
             </a>
@@ -113,20 +127,19 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       <div class="piepagina">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-facebook"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-          />
-        </svg>
+        <a href="https://www.facebook.com/MinisterioTIC.Colombia/" class="iconos"><i class="bi bi-facebook"> ministerioTIC.Colombia</i></a>
+        <a href="https://www.instagram.com/ministerio_tic/"class="iconos"><i class="bi bi-instagram"> ministerio_tic</i></a>
+        <a href="https://x.com/Ministerio_TIC" class="iconos"><i class="bi bi-twitter-x"> @Ministerio_TIC</i></a>
+        <a href="@ministerio_tic" class="iconos"><i class="bi bi-tiktok"> @ministerio_tic</i></a>
+       
+      </div>
+      <div class="informacion">
+        <h2 class="titulo">Ministerio de Tecnologías de la Información y las Comunicaciones</h2>
+        <h3 class="texto">Edificio Murillo Toro Cra. 8a entre calles 12A y 12B Bogotá, Colombia - Código Postal 111711</h3>
+        <h3 class="texto">Teléfono Conmutador: +57 601 344 34 60 - Línea Gratuita: 01-800-0914014</h3>
+       
       </div>
     </footer>
     <script

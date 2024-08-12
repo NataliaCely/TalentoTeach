@@ -10,3 +10,6 @@ window.addEventListener("resize", function () {
     sidebar.classList.remove("expand");
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  sidebar.classList.add("expand");
+});
