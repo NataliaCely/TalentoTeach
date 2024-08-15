@@ -212,7 +212,6 @@ a.sidebar-link:hover {
     }
 
     .piepagina{
-        display: flex;
         flex-direction: column;
     
 
