@@ -172,6 +172,7 @@ p.redes {
 .fa-bars {
   size: 16px;
 }
+
 @media  (min-width < 768px){
   .contenedor_login {
     background-color: rgb(255, 255, 255);

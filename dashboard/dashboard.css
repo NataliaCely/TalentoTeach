@@ -47,6 +47,24 @@ body {
     flex-direction: column;
 }
 
+.notifications1{
+    border-left: 1rem solid var(--bd-callout-border, #bed4fe);
+}
+
+.notifications2{
+    border-left: 1rem solid var(--bd-callout-border, #bcf5db);
+}
+
+
+.notifications3{
+    border-left: 1rem solid var(--bd-callout-border, #bbecfa);
+}
+
+
+.notifications4{
+    border-left: 1rem solid var(--bd-callout-border, #f9ecc0);
+}
+
 #sidebar.expand {
     width: 215px;
     min-width: 215px;
