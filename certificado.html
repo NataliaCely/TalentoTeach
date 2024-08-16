@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificados</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="./dashboard/dashboard.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="baner">
+      <img class="banerinicio" src="./img/baner.png" alt="" />
+    </div>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <button class="toggle-btn btn-sm menu" type="button">
+          <i class="lni lni-menu"></i>
+        </button>
+        <a class="navbar-brand text-light"><i class="bi bi-person-circle"></i> Usuario Validado</a>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <aside id="sidebar">
+        <div class="d-flex">
+          <div class="sidebar-logo">
+            <a href="#">TalentoTech</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="dashboard.html" class="sidebar-link">
+              <i class="lni lni-grid-alt"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="usuarios.html" class="sidebar-link">
+              <i class="lni lni-users"></i>
+              <span>Usuarios</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="formacion.html" class="sidebar-link">
+              <i class="lni lni-library"></i>
+              <span>Mi formación</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="calificaciones.html" class="sidebar-link">
+              <i class="lni lni-agenda"></i>
+              <span>Calificaciones</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="sesiones.html" class="sidebar-link">
+              <i class="lni lni-video"></i>
+              <span>Sesiones</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="contenidos.html" class="sidebar-link">
+              <i class="lni lni-code-alt"></i>
+              <span>Contenidos</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="foro.html" class="sidebar-link">
+              <i class="lni lni-popup"></i>
+              <span>Foro</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="certificado.html" class="sidebar-link">
+              <i class="lni lni-graduation"></i>
+              <span>Certificado</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="index.html" class="sidebar-link">
+            <i class="lni lni-exit"></i>
+            <span>Salir</span>
+          </a>
+        </div>
+      </aside>
+      <!--Calificaciones-->
+      <div class="main p-3">
+        <div class="text-center">
+          <div class="card p-3">
+            <div class="table-responsive">
+              <h1 class="text-primary-emphasis">Descargar certificados</h1>
+              <hr />
+
+              <div class="d-grid d-md-flex justify-content-md-end">
+                <button class="btn btn-primary btn-sm"  data-bs-toggle="modal" data-bs-target="#usuarioModal"type="button">
+                  Agregar certificado
+                </button>
+              </div>
+
+
+              <br />
+              <table class="table table-striped table-hover border">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Aprobo</th>
+                    <th scope="col">Descargar certificado</th>
+                    <th scope="col">Eliminar</th>
+
+                    
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Camila</td>
+                    <td>Gomez</td>
+                     <td>3.2</td>
+                    <td><i class="bi bi-emoji-grin" style="color: green ; font-size:25px;"></i></td>
+
+                    <td>
+                        <a href="https://drive.google.com/file/d/138lowMs8ogrl6VHdDz2uB9FQ0VFXgyoX/view?usp=sharing" target="_blank" >
+                          <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="">                        
+                          Descarga <i class="bi bi-cloud-download" style="color: rgb(3, 3, 17); font-size:15px;"></i>                         
+                        </button>  </a>  
+                      </td>
+                    
+                    <td>
+                         <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarAlertModal" >
+                         <i class="lni lni-trash-can"></i>
+                        </button>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Kevin</td>
+                    <td>Parra</td>            
+                   
+                      <td>1.6</td>
+                      <td><i class="bi bi-emoji-dizzy" style="color: rgb(243, 9, 9); font-size:25px;"></i></td>
+                      <td>
+                        <a href="NA" target="_blank" >
+                          <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="">                        
+                          Descarga <i class="bi bi-cloud-download" style="color: rgb(3, 3, 17); font-size:15px;"></i>                         
+                        </button>  </a>  
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarAlertModal" >
+                        <i class="lni lni-trash-can"></i>
+                       </button>
+                   </td>
+                      
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Juan</td>
+                    <td>Garzon</td>
+                    <td>4.2</td>
+                    <td><i class="bi bi-emoji-grin" style="color: green ; font-size:25px;"></i></td>
+                    <td>
+                        <a href="https://drive.google.com/file/d/1qbxUECQuY50ovVxIf7S5jlfCQXGJjkGH/view?usp=sharing" target="_blank" >
+                          <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="">                        
+                          Descarga <i class="bi bi-cloud-download" style="color: rgb(3, 3, 17); font-size:15px;"></i>                         
+                        </button>  </a>  
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarAlertModal" >
+                        <i class="lni lni-trash-can"></i>
+                       </button>
+                   </td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Luis</td>
+                    <td>Rodriguez</td>
+                    <td>2.8</td>
+                    <td><i class="bi bi-emoji-dizzy" style="color: rgb(243, 9, 9); font-size:25px;"></i></td>
+                    <td>
+                        <a href="NA" target="_blank" >
+                          <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="">                        
+                          Descarga <i class="bi bi-cloud-download" style="color: rgb(3, 3, 17); font-size:15px;"></i>                         
+                        </button>  </a>  
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarAlertModal" >
+                        <i class="lni lni-trash-can"></i>
+                       </button>
+                   </td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <nav
+                aria-label="Paginacion"
+                class="pagination-nav d-grid gap-2 d-md-fle justify-content-md-end"
+              >
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="vacio col-2"></div>
+      <div class="piepagina col-6">
+        <ul class="footer-ul">
+          <li><a href="https://www.facebook.com/MinisterioTIC.Colombia/" class="iconos"><i class="bi bi-facebook"> ministerioTIC.Colombia</i></a></li>
+          <li><a href="https://www.instagram.com/ministerio_tic/"class="iconos"><i class="bi bi-instagram"> ministerio_tic</i></a></li>
+          <li><a href="https://x.com/Ministerio_TIC" class="iconos"><i class="bi bi-twitter-x"> @Ministerio_TIC</i></a></li>
+          <li><a href="@ministerio_tic" class="iconos"><i class="bi bi-tiktok"> @ministerio_tic</i></a></li>
+        </ul>
+        
+        
+        
+        
+       
+      </div>
+      <div class="informacion col-4">
+        <h2 class="titulo small">Ministerio de Tecnologías de la Información y las Comunicaciones</h2>
+        <h3 class="texto">Edificio Murillo Toro Cra. 8a entre calles 12A y 12B Bogotá, Colombia - Código Postal 111711</h3>
+        <h3 class="texto">Teléfono Conmutador: +57 601 344 34 60 - Línea Gratuita: 01-800-0914014</h3>
+       
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="usuarioModal"
+      tabindex="-1"
+      aria-labelledby="Add-Edit-User"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5 text-primary-emphasis"
+              id="Add-Edit-User"
+            >
+              Seleccione el certificado
+            </h1>
+
+           
+          </div>
+          <div class="modal-body">
+            <form>
+              <div >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione estudiante</option>
+                  <option value="1">Camila Gomez</option>
+                  <option value="2">Juan Grazon</option>
+                  <option value="3">Kevin Parra</option>                 
+                  <option value="5">Luis Rodriguez</option>
+                </select>
+
+              </div>
+              <br>
+              <div >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione certificado</option>
+                  <option value="1">DISEÑO WEB EN HTML</option>
+                  <option value="2">DISEÑO WEB CSS</option>
+                  <option value="3">DISEÑO WEB JAVASCRIPT</option>
+                
+                </select>
+              </div>
+             
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >
+              Cerrar
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >
+              Guardar
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="eliminarAlertModal" tabindex="-1" aria-labelledby="Add-Edit-User" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5
+          class="modal-title fs-5 "
+          id="Add-Edit-User"
+        >
+          ¿Esta seguro de eliminar el certificado?
+        </h5>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >
+          Eliminar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./dashboard/dashboard.js"></script>
+</body>
+</html>
