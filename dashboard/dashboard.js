@@ -13,3 +13,15 @@ window.addEventListener("resize", function () {
 document.addEventListener("DOMContentLoaded", function () {
   sidebar.classList.add("expand");
 });
+
+function enviar() {
+  alert("Datos Enviados al Foro")
+  
+}
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+});
