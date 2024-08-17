@@ -234,9 +234,7 @@ a.sidebar-link:hover {
     
 
     }
-    .informacion{
-      
-    }
+
     .bi{
         color: white;
         size: 10px;
@@ -261,7 +259,31 @@ a.sidebar-link:hover {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+    }
+
+
+    @media (max-width: 1200px) {
+        .g-1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+ 
+    @media (max-width: 1000px) {
+        .g-1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 660px) {
+        .g-1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
     .card{
